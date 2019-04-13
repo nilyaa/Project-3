@@ -29,10 +29,10 @@
 h1 {
   background-color: #2D3945;
   color: #ffffff;
-  text-transform: uppercase;
   font-size: 1.37em;
   margin: 0;
   padding: 28px 0 28px 0;
+  text-transform: uppercase;
 }
 
 /* Reusable Classes */
@@ -63,10 +63,10 @@ h1 {
 .field {
   background: #eff0f1;
   border: 2px solid transparent;
-  outline: none;
-  padding: 1.1rem;
   border-radius: 0.4rem;
   line-height: 1.3rem;
+  outline: none;
+  padding: 1.1rem;
 }
 
 .field:focus {
@@ -104,25 +104,25 @@ textarea[id="comments"] {
 }
 
 ::-webkit-input-placeholder {
-  text-align: right;
+  color: #C2C6C8;
   font-style: italic;
+  font-size: 0.8rem;
+  text-align: right;
   transform: skew(8deg);
   -webkit-transform: skew(8deg);
-  font-size: 0.8rem;
-  color: #C2C6C8;
 }
 
 /* Button Styles */
 
 .btn {
-  padding: 19px 39px 18px 39px;
-  color: #FFF;
   background-color: #4EBBB5;
-  font-size: 18px;
-  text-align: center;
   border-radius: 5px;
-  width: 100%;
+  color: #FFF;
   cursor: pointer;
+  font-size: 18px;
+  padding: 19px 39px 18px 39px;
+  text-align: center;
+  width: 100%;
 }
 
 .btn:hover {
@@ -165,17 +165,17 @@ footer {
   }
 
   .flex {
+    align-content: flex-start;
     display: flex;
     flex-direction: row;
-    align-content: flex-start;
   }
 
   .flex > label {
-    flex: 1;
+    flex-basis: 30%;
   }
 
   .flex> input {
-    flex: 2;
+    flex-basis: 70%;
   }
 
   select {
@@ -195,4 +195,8 @@ footer {
     max-width: 40%;
     margin-bottom: 0px;
   }
+
+  #county {
+  height: 60px;
+}
 }
