@@ -6,7 +6,7 @@
   font-family: 'Merriweather', serif;
 }
 
-/* Layout */
+/* Layout Styles */
 
 .container {
   margin: 0 14px 0 14px;
@@ -24,7 +24,7 @@
   margin-top: 5px;
 }
 
-/* Header style */
+/* Header */
 
 h1 {
   background-color: #2D3945;
@@ -35,7 +35,7 @@ h1 {
   padding: 28px 0 28px 0;
 }
 
-/* Reusable classes */
+/* Reusable Classes */
 
 .align {
   text-align: center;
@@ -77,7 +77,7 @@ h1 {
   margin-bottom: 32px;
 }
 
-/* Form styles */
+/* Form Styles */
 
 fieldset {
   border: none;
@@ -107,12 +107,12 @@ textarea[id="comments"] {
   text-align: right;
   font-style: italic;
   transform: skew(8deg);
--webkit-transform: skew(8deg);
+  -webkit-transform: skew(8deg);
   font-size: 0.8rem;
   color: #C2C6C8;
 }
 
-/* Buttons  */
+/* Button Styles */
 
 .btn {
   padding: 19px 39px 18px 39px;
@@ -129,7 +129,7 @@ textarea[id="comments"] {
   opacity: .75;
 }
 
-/* List styles */
+/* List Styles */
 
 ul {
   padding: 0;
@@ -145,7 +145,7 @@ footer {
   font-style: italic;
   font-weight: bold;
   transform: skew(6deg);
--webkit-transform: skew(6deg)
+  -webkit-transform: skew(6deg)
 }
 
 /* Flex Styles */
@@ -167,6 +167,7 @@ footer {
   .flex {
     display: flex;
     flex-direction: row;
+    align-content: flex-start;
   }
 
   .flex > label {
@@ -190,4 +191,8 @@ footer {
     padding-bottom: 15px;
   }
 
+  #zip {
+    max-width: 40%;
+    margin-bottom: 0px;
+  }
 }
