@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Merriweather', serif;
+}
+
+/* Layout */
+
+.container {
+  margin: 0 14px 0 14px;
+  padding-bottom: 200px;
+}
+
+.subheader {
+  border-bottom: 4px solid #2D3945;
+  padding: 15px 0 20px 0;
+}
+
+.contact {
+  border-bottom: 2px solid #2D3945;
+  border-top: 2px solid #2D3945;
+  margin-top: 5px;
+}
+
+/* Header style */
+
+h1 {
+  background-color: #2D3945;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.37em;
+  margin: 0;
+  padding: 28px 0 28px 0;
+}
+
+/* Reusable classes */
+
+.align {
+  text-align: center;
+}
+
+.padding {
+  padding: 32px 0 32px 0;
+}
+
+.heading {
+  color: #2D3945;
+  font-size: 1.37em;
+  font-weight: bold;
+}
+
+.font {
+  font-size: 1.063em;
+  font-weight: lighter;
+}
+
+.color {
+  color: #748593;
+}
+
+.field {
+  background: #eff0f1;
+  border: 2px solid transparent;
+  outline: none;
+  padding: 1.1rem;
+  border-radius: 0.4rem;
+  line-height: 1.3rem;
+}
+
+.field:focus {
+  border-color: #004E7D;
+}
+
+.margin {
+  margin-bottom: 32px;
+}
+
+/* Form styles */
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  margin-bottom: 12px;
+}
+
+p {
+  color: #AEB3B6;
+}
+
+#zip {
+  max-width: 50%;
+  margin-bottom: 0px;
+}
+
+textarea[id="comments"] {
+  margin-top: 20px;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+  text-align: right;
+  font-style: italic;
+  transform: skew(8deg);
+-webkit-transform: skew(8deg);
+  font-size: 0.8rem;
+  color: #C2C6C8;
+}
+
+/* Buttons  */
+
+.btn {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4EBBB5;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: .75;
+}
+
+/* List styles */
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* Footer */
+
+footer {
+  font-style: italic;
+  font-weight: bold;
+  transform: skew(6deg);
+-webkit-transform: skew(6deg)
+}
+
+/* Flex Styles */
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex > label {
+    flex: 1;
+  }
+
+  .flex> input {
+    flex: 2;
+  }
+
+  select {
+    width: 68.2%;
+  }
+
+  .contact label {
+    margin: 0;
+    padding-top: 20px;
+  }
+
+  .newsletter label {
+    padding-bottom: 15px;
+  }
+
+}
